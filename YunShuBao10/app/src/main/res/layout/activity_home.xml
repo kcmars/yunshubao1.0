@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="aiyun.a56999.com.activity.HomeActivity">
+
+        <android.support.design.widget.AppBarLayout
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:popupTheme="@style/AppTheme">
+
+                <LinearLayout
+                    android:padding="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:textColor="@color/colorWhite"
+                        android:text="@string/app_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorWhite"
+                        android:text="@string/location"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorWhite"
+                        android:text="@string/business"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            android:id="@+id/layout_content"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+        <android.support.design.widget.TabLayout
+            android:background="@drawable/bg_slide"
+            android:id="@+id/footer_tab"
+            app:tabIndicatorHeight="0dp"
+            app:tabSelectedTextColor="@color/colorPrimary"
+            app:tabTextColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+</layout>
+
