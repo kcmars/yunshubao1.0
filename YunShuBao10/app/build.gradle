@@ -22,6 +22,7 @@ android {
 }
 
 dependencies {
+    compile 'com.google.zxing:core:3.3.0' //生成二维码
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.squareup.okhttp3:okhttp:3.8.1'
     compile 'com.google.code.gson:gson:2.8.1'
