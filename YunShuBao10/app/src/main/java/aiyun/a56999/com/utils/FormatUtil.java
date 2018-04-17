@@ -12,7 +12,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
-/** * @ClassName: FormatUtil * @Description: 格式化工具类 * @Author Wangnan * @Date 2018/4/9 */
+/** * @ClassName: FormatUtil * @Description: 格式化工具类 * @Author zhangping * @Date 2018/4/9 */
 public class FormatUtil {
 
     /**

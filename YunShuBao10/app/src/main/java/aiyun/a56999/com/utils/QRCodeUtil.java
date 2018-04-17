@@ -16,7 +16,7 @@ import com.google.zxing.qrcode.QRCodeWriter;
 import java.util.Hashtable;
 
 
-/** * @ClassName: QRCodeUtil * @Description: 二维码工具类 * @Author Wangnan * @Date 2017/2/10 */
+/** * @ClassName: QRCodeUtil * @Description: 二维码工具类 * @Author zhangping * @Date 2017/2/10 */
 public class QRCodeUtil {
 
     /** * 创建二维码位图 * * @param content 字符串内容 * @param size 位图宽&高(单位:px) * @return */

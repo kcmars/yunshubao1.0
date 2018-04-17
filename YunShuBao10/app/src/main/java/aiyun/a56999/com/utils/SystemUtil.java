@@ -1,5 +1,6 @@
 package aiyun.a56999.com.utils;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -17,7 +18,6 @@ public class SystemUtil {
 
     /**
      * 保存用户信息
-     *
      * @param context
      * @param key
      * @param value
@@ -31,7 +31,6 @@ public class SystemUtil {
 
     /**
      *清除用户信息
-     *
      * @param context
      */
     public static void clearPreference(Context context) {
@@ -45,7 +44,6 @@ public class SystemUtil {
 
     /**
      *清除用户某个信息
-     *
      * @param context
      */
     public static void removePreference(Context context, String key) {
@@ -57,7 +55,6 @@ public class SystemUtil {
 
     /**
      * 获取用户信息
-     *
      * @param context
      * @param newKey
      * @return
@@ -113,7 +110,6 @@ public class SystemUtil {
 
     /**
      * 是否开启定位服务
-     *
      * @param context
      * @return
      */
@@ -148,13 +144,13 @@ public class SystemUtil {
                 Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
                 context.startActivityForResult(intent, request);
             } catch (Exception e) {
+                e.printStackTrace();
             }
         }
     }
 
     /**
      * 打开定位服务
-     *
      * @param context
      * @param request
      */
@@ -163,7 +159,7 @@ public class SystemUtil {
             Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
             context.startActivityForResult(intent, request);
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
     }
 }
