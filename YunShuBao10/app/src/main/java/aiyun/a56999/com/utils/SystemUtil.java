@@ -1,6 +1,6 @@
 package aiyun.a56999.com.utils;
 
-import android.annotation.SuppressLint;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -13,7 +13,12 @@ import android.os.Build;
 import android.provider.Settings;
 import android.text.TextUtils;
 
-/** * @ClassName: SystemUtil * @Description: 系统工具类 * @Author zhangping * @Date 2018/4/9 */
+/**
+ * @ClassName: SystemUtil
+ * @Description: 系统工具类
+ * @Author zhangping
+ * @Date 2018/4/9
+ */
 public class SystemUtil {
 
     /**

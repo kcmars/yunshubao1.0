@@ -13,6 +13,7 @@ import aiyun.a56999.com.fragment.HomeFragment;
 import aiyun.a56999.com.fragment.MeFragment;
 import aiyun.a56999.com.fragment.MoreFragment;
 import aiyun.a56999.com.fragment.NearFragment;
+import aiyun.a56999.com.utils.VoiceUtil;
 
 public class HomeActivity extends AppCompatActivity implements TabLayout.OnTabSelectedListener {
 
@@ -63,6 +64,9 @@ public class HomeActivity extends AppCompatActivity implements TabLayout.OnTabSe
         mFooterTab.addOnTabSelectedListener(this);
 
         switchFragment(mHomeFrag, "mHomeFrag").commit();
+
+        //语音播报
+//        VoiceUtil.getInstance(getApplicationContext()).startSpeakingNow();
 
     }
 

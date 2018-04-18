@@ -15,9 +15,16 @@
         <item name="android:paddingRight">0dp</item>
         <item name="android:textColor">@color/colorWhite</item>
     </style>
-    <style name="AppTheme.NoActionBar">
+    <!-- 去掉title -->
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+    </style>
+    <!-- 启动页样式 -->
+    <style name="SplashTheme" parent="AppTheme.NoActionBar">
+        <!-- 欢迎页背景引用刚才写好的 -->
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
 
 </resources>
